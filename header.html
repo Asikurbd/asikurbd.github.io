@@ -1,0 +1,53 @@
+<link rel="icon" href="https://asikurbd.github.io/wi/dna.png" />
+
+<div class="head">
+<center> <a href="/"> <img src="https://asikurbd.github.io/Image-Upload/logo.png" width="300px" /> </a> </center>
+</div>
+
+<div style="border: 1px dashed #000; border-radius:4px;padding: 3px; background-color:#b4eaf0;"><center>
+Short Link ㅤ
+<a href="https://t.me/s/arbd2" target="_blank">
+<font color="blue">t.me/s/arbd2
+</font></a></center></div>
+<center style="padding:3px;"></center>
+
+<center>
+<table style="background:#dc4264;" width="100%">
+<tr>
+<td align="center" style="border-right: 1px solid #fff;"  width="33%">
+<center style="padding:3px;"></center>
+<a href="/"><img src="https://asikurbd.github.io/wi/home.png"/><b> <font color="white">Home</font></b></a>
+<center style="padding:3px;"></center>
+</td>
+<td align="center" style="border-right: 1px solid #fff;" width="33%">
+<center style="padding:3px;"></center>
+<a href="/p/blog_30.html"><img src="https://asikurbd.github.io/wi/xml.png"/><b> <font color="white">Blog</font></b></a>
+<center style="padding:3px;"></center>
+</td><td align="center" width="33%">
+<center style="padding:3px;"></center>
+<a href="/p/cat.html"><img src="https://asikurbd.github.io/wi/dna.png" /><b> <font color="white">Category</font></b></a>
+<center style="padding:3px;"></center>
+</td>
+</tr>
+</table></center> <center style="padding:3px;"></center>
+
+<script src="https://asikurbd.github.io/pagination/pagination.min.js"></script>
+
+<script src="https://asikurbd.github.io/pagination/pagination.js"></script>
+
+<script src="https://asikurbd.github.io/jQuery-Filters/jQuery.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myDIV *").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+<center><input id="myInput" type="text" placeholder="Search.." /></center>
+
+<center style="padding:3px;"></center>
