@@ -4,4 +4,4 @@ function callAll(jsfiles) {
     src.setAttribute("src", jsfiles);
     document.getElementsByTagName("head")[0].appendChild(src);
 }
-callAll("/js/include.js");
+callAll("https://asikurbd.github.io/js/include.js");
