@@ -4,16 +4,29 @@
 $(function() {
   $("#header").load("/header.html"); 
   $("#footer").load("/footer.html"); 
-  $("#posts").load("/posts-list.html"); 
 });
 </script>
 </head>
 
 <body>
-<div id="header"></div>
 
-<div id="posts"></div> 
 
+<html>	
+  <body>	  
+    <script>
+      (async () => {
+        const response = await fetch('https://api.github.com/repos/asikurbd/posts/contents/');
+        const data = await response.json();      
+        let htmlString = '<div id="header"></div>';        
+        for (let file of data) {
+          htmlString += `<hr> &#x2022; <a href="${file.path}">${file.name}</a>`;
+        }
+        htmlString += '';	      
+        document.getElementsByTagName('body')[0].innerHTML = htmlString;
+      })()
+    </script>
+  <body>
+</html>
 
 <div id="footer"></div>
 </body>
