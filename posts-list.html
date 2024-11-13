@@ -6,9 +6,9 @@
         const data = await response.json();      
         let htmlString = ' ';        
         for (let file of data) {
-          htmlString += `<hr> &#x2022; <a href="${file.path}">${file.name}</a>`;
+          htmlString += `<hr> &#x2022; <a href="/posts/${file.path}">${file.name}</a>`;
         }
-        htmlString += '';	      
+        htmlString += '<hr>';	      
         document.getElementsByTagName('body')[0].innerHTML = htmlString;
       })()
     </script>
