@@ -19,7 +19,7 @@ $(function() {
         const data = await response.json();      
         let htmlString = '<div id="header"></div>';        
         for (let file of data) {
-          htmlString += `<hr> &#x2022; <a href="/${file.path}">${file.name}</a>`;
+          htmlString += `<hr> &#x2022; <a href="/posts/${file.path}">${file.name}</a>`;
         }
         htmlString += '';	      
         document.getElementsByTagName('body')[0].innerHTML = htmlString;
