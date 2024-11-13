@@ -21,7 +21,7 @@ $(function() {
         for (let file of data) {
           htmlString += `<hr> &#x2022; <a href="/posts/${file.path}">${file.name}</a>`;
         }
-        htmlString += '<div id="footer"></div>';	      
+        htmlString += '<hr><div id="footer"></div>';	      
         document.getElementsByTagName('body')[0].innerHTML = htmlString;
       })()
     </script>
